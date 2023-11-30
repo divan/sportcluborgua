@@ -550,16 +550,8 @@ video {
   bottom: 0px;
 }
 
-.end-full {
-  inset-inline-end: 100%;
-}
-
 .start-0 {
   inset-inline-start: 0px;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .top-full {
@@ -576,11 +568,6 @@ video {
 
 .z-50 {
   z-index: 50;
-}
-
-.\!mx-\[10px\] {
-  margin-left: 10px !important;
-  margin-right: 10px !important;
 }
 
 .mx-auto {
@@ -868,6 +855,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
@@ -1038,11 +1030,6 @@ video {
   position: absolute;
 }
 
-.before\:-end-5::before {
-  content: var(--tw-content);
-  inset-inline-end: -1.25rem;
-}
-
 .before\:-top-5::before {
   content: var(--tw-content);
   top: -1.25rem;
@@ -1053,24 +1040,9 @@ video {
   inset-inline-start: 0px;
 }
 
-.before\:top-0::before {
-  content: var(--tw-content);
-  top: 0px;
-}
-
 .before\:h-5::before {
   content: var(--tw-content);
   height: 1.25rem;
-}
-
-.before\:h-full::before {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.before\:w-5::before {
-  content: var(--tw-content);
-  width: 1.25rem;
 }
 
 .before\:w-full::before {
@@ -1317,10 +1289,6 @@ video {
     margin-top: 0px;
   }
 
-  .sm\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -1339,11 +1307,6 @@ video {
 
   .sm\:w-48 {
     width: 12rem;
-  }
-
-  .sm\:-rotate-90 {
-    --tw-rotate: -90deg;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .sm\:flex-row {
@@ -1435,10 +1398,6 @@ video {
     transition-duration: 150ms;
   }
 
-  .sm\:\[--strategy\:absolute\] {
-    --strategy: absolute;
-  }
-
   .sm\:\[--strategy\:fixed\] {
     --strategy: fixed;
   }
@@ -1492,6 +1451,11 @@ video {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:text-6xl {

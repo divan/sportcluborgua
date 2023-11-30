@@ -1,3 +1,48 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://sportclub.org.ua'
+title = 'Мій спортклуб'
+languageCode = 'uk-UA'
+defaultContentLanguage = 'uk'
+buildDrafts = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = 'Навчання'
+    url = '/learn'
+    weight = 1
+    [[menu.main]]
+      parent = 'Навчання'
+      name = 'Книги'
+      url = '/learn/course-1'
+      weight = 1
+    [[menu.main]]
+      parent = 'Навчання'
+      name = 'Відео'
+      url = '/learn/course-2'
+      weight = 1
+  [[menu.main]]
+    name = 'Історії успіху'
+    url = '/stories'
+    weight = 2
+  [[menu.main]]
+    name = 'Рейтинг міст'
+    url = '/cities'
+    weight = 3
+
+[params.cities]
+    url = "https://docs.google.com/spreadsheets/d/15v2LrfMrWJRT6q3n7elGJH8g7_JG7EuDBiftMxJu3bM/export?format=csv&gid=0"
+
+[caches]
+  [caches.getcsv]
+    maxAge = "1h"
+
+[params.contacts]
+    email = "board@eusport.org.ua"
+
+[params.social]
+    facebook = "https://www.facebook.com/profile.php?id=100088607476771"
+    telegram = "https://t.me/eu_sport_coalition"
