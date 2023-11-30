@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ .Site.Title }}</title>
     {{ $styles := resources.Get "css/main.css" | resources.ExecuteAsTemplate "main.css" . | resources.PostCSS }}
-    <link href="{{ $styles.Permalink }}" rel="stylesheet">
-</head>
-<body>
+    <link href="{{ $styles.Permalink }}" rel="stylesheet" />
+    <script src="/js/preline.js"></script>
+  </head>
+  <body>
     {{ block "main" . }}{{ end }}
-</body>
+  </body>
 </html>
