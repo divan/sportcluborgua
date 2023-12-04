@@ -1,6 +1,9 @@
 {{ define "main" }}
+{{ $bgImage := resources.Get "images/bg.svg" }}
+<div style="background-image: url('{{ $bgImage.RelPermalink }}');" class="bg-no-repeat">
 {{ partial "navbar.html" . }}
 {{ partial "home/hero.html" . }}
 {{ partial "home/hero1.html" . }}
 {{ partial "footer.html" . }}
+</div>
 {{ end }}
